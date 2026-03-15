@@ -48,7 +48,7 @@ nav.scrolled{background:rgba(10,30,22,0.93);backdrop-filter:blur(14px);box-shado
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:100px 24px 60px;}
-.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1800&q=85') center/cover no-repeat;animation:slowZoom 18s ease-in-out infinite alternate;}
+.hero-bg{position:absolute;inset:0;background:url('/images/swatt.jpeg') center/cover no-repeat;animation:slowZoom 18s ease-in-out infinite alternate;}
 @keyframes slowZoom{from{transform:scale(1.06);}to{transform:scale(1.13);}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,30,20,0.6) 0%,rgba(10,30,20,0.25) 40%,rgba(10,30,20,0.6) 100%);}
 .hero-overlay2{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(5,15,10,0.5) 100%);}

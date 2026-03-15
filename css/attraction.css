@@ -339,3 +339,50 @@ footer a{color:var(--orange);text-decoration:none;}
   .fact{flex:1 1 45%;border-bottom:1px solid rgba(255,255,255,0.07);}
   .form-row{grid-template-columns:1fr;}
 }
+
+/* ── SECTION BACKGROUNDS ── */
+
+/* Bahrain - River section */
+#river { background: linear-gradient(135deg, #0a1a18, #0d3028); }
+
+/* White Palace - History section */
+#history { background: linear-gradient(160deg, #1a1208, #2a1a06); }
+#history .sec-title { color: #f5ead0; }
+#history .sec-sub   { color: rgba(255,255,255,0.5); }
+
+/* Fizagat - Family section */
+#family { background: linear-gradient(135deg, #0a180c, #0d2e12); }
+#family .sec-title { color: #fff; }
+#family .sec-label { color: var(--orange); }
+
+/* Ushu - Forest section */
+#forest { background: linear-gradient(160deg, #080f08, #0d2010); }
+#forest .sec-title { color: #fff; }
+#forest .sec-label { color: var(--orange); }
+
+/* Butkara - History & Nearby sections */
+#history-butkara, #nearby { background: linear-gradient(160deg, #120e08, #2a1a06); }
+#nearby .sec-title { color: #f5ead0; }
+#nearby .sec-label { color: var(--orange); }
+
+/* Jarogo - Science & Trek sections */
+#science { background: linear-gradient(160deg, #050f14, #0d2a38); }
+#science .sec-title { color: #fff; }
+#trek { background: #f0f8fc; }
+#trek .sec-title { color: var(--green); }
+#trek .step-body h4 { color: #0d3a4a; }
+
+/* Mahodand - Lake info section */
+#lakeinfo { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
+#lakeinfo .sec-title { color: var(--green); }
+
+/* Kalam - Nearby section */
+#nearby { background: #f9f6f0; }
+#nearby .sec-title { color: var(--green); }
+#nearby .nearby-info h4 { color: var(--green); }
+#nearby .nearby-info p  { color: #777; }
+#nearby .nearby-dist    { background: #e8f4f0; color: var(--green); }
+#nearby .nearby-card    { background: #fff; border-color: #eee; }
+#nearby .nb-card        { background: #fff; border-color: #eee; }
+#nearby .nb-info h4     { color: var(--green); }
+#nearby .nb-info p      { color: #777; }
