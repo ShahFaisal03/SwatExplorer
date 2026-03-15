@@ -3,7 +3,7 @@
 > A beautiful, modern, fully responsive tourism website for **Swat Valley, Khyber Pakhtunkhwa, Pakistan** — built with pure HTML5, CSS3 and vanilla JavaScript. No frameworks, no dependencies.
 
 🌐 **Live Site:** [swatexplorer.netlify.app](https://swatexplorer.netlify.app)  
-📁 **Repository:** [github.com/yourusername/SwatExplorer](https://github.com/yourusername/SwatExplorer)  
+📁 **Repository:** [github.com/yourusername/SwatExplorer](https://github.com/ShahFaisal03/SwatExplorer)  
 👤 **Author:** Shah Faisal — Mingora, Swat Valley, Pakistan
 
 ---
