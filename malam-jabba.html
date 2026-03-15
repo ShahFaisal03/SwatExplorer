@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Malam Jabba – Swat Valley Explorer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔</text></svg>"/>
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/attraction.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">🏔</div>
+    <div class="logo-text">
+      <span>SwatExplorer</span>
+      <span>Swat Valley · Pakistan</span>
+    </div>
+  </a>
+  <a href="index.html#attractions" class="nav-back">← Back to All Attractions</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg " style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85')"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="hero-tag">⛷ Ski Resort · Upper Swat</div>
+    <h1>Malam Jabba</h1>
+    <div class="hero-meta">
+      <div class="meta-item">📍 <span>68 km from Mingora</span></div>
+      <div class="meta-item">🏔 <span>2,804m Altitude</span></div>
+      <div class="meta-item">❄ <span>Snow: Nov – Mar</span></div>
+      <div class="meta-item">⭐ <span>4.8 / 5 Rating</span></div>
+    </div>
+  </div>
+  <div class="scroll-line">Scroll</div>
+</section>
+
+<!-- QUICK FACTS -->
+<div class="facts-bar">
+  <div class="facts-inner">
+    <div class="fact"><span class="fval">2,804m</span><span class="flbl">Elevation</span></div>
+    <div class="fact"><span class="fval">~2hr</span><span class="flbl">Drive from Mingora</span></div>
+    <div class="fact"><span class="fval">4 km</span><span class="flbl">Ski Runs</span></div>
+    <div class="fact"><span class="fval">Nov–Mar</span><span class="flbl">Snow Season</span></div>
+    <div class="fact"><span class="fval">All Year</span><span class="flbl">Open to Tourists</span></div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+  <div class="container">
+    <div class="overview-grid reveal">
+      <div class="overview-text">
+        <div class="sec-label">Overview</div>
+        <h2 class="sec-title">Pakistan's Premier Mountain Resort</h2>
+        <p>Malam Jabba is Pakistan's only international-standard ski resort, perched at 2,804 metres above sea level in the heart of Swat Valley. What was once a hideaway for royalty is now one of the country's most thrilling year-round destinations.</p>
+        <p>In winter, the slopes transform into a glistening white paradise attracting skiers and snowboarders from across Pakistan. In summer, the same mountains offer breathtaking hiking trails, lush green meadows, and some of the cleanest mountain air you'll ever breathe.</p>
+        <p>The resort features a modern chairlift, ski school, equipment rentals, and a comfortable hotel — making it accessible to both beginners and seasoned adventurers.</p>
+        <div class="highlight-box">
+          <h4>✨ Why Visit Malam Jabba?</h4>
+          <ul>
+            <li>Pakistan's only operating ski chairlift</li>
+            <li>Stunning 360° panoramic mountain views</li>
+            <li>Summer hiking trails through pine forests</li>
+            <li>Paragliding, zipline & adventure sports</li>
+            <li>On-site hotel, restaurant & ski school</li>
+            <li>Perfect for families, couples & groups</li>
+          </ul>
+        </div>
+      </div>
+      <div class="overview-imgs">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Malam Jabba panorama"/>
+        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&q=80" alt="Skiing"/>
+        <img src="https://images.unsplash.com/photo-1520209268518-aec60b8bb5ca?w=400&q=80" alt="Mountain view"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery" style="padding-top:0;">
+  <div class="container">
+    <div class="sec-label reveal">Photo Gallery</div>
+    <h2 class="sec-title reveal">See the Beauty</h2>
+    <div class="gallery-grid reveal">
+      <div class="g-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1000&q=85" alt="Malam Jabba wide"/>
+      </div>
+      <div class="g-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80" alt="Ski slopes"/>
+      </div>
+      <div class="g-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain peaks"/>
+      </div>
+      <div class="g-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1520209268518-aec60b8bb5ca?w=600&q=80" alt="Snow view"/>
+      </div>
+      <div class="g-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=80" alt="Snowy night"/>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">✕</span>
+  <img id="lightboxImg" src="" alt=""/>
+</div>
+
+<!-- ACTIVITIES -->
+<section class="section" id="activities">
+  <div class="container">
+    <div class="sec-label reveal">Activities</div>
+    <h2 class="sec-title reveal">Things To Do</h2>
+    <p class="sec-sub reveal">From heart-pumping adventures to peaceful scenic walks — Malam Jabba has it all.</p>
+    <div class="activities-grid reveal">
+      <div class="act-card">
+        <span class="act-icon">⛷</span>
+        <h4>Skiing & Snowboarding</h4>
+        <p>Hit the slopes with rental equipment and professional ski instructors available for beginners.</p>
+        <span class="act-badge">Nov – Mar</span>
+      </div>
+      <div class="act-card">
+        <span class="act-icon">🚡</span>
+        <h4>Chairlift Ride</h4>
+        <p>Soar above the treetops on Pakistan's most scenic chairlift for breathtaking panoramic views.</p>
+        <span class="act-badge">All Year</span>
+      </div>
+      <div class="act-card">
+        <span class="act-icon">🪂</span>
+        <h4>Paragliding</h4>
+        <p>Launch from the mountain peaks and glide over the stunning Swat Valley landscapes below.</p>
+        <span class="act-badge">Apr – Oct</span>
+      </div>
+      <div class="act-card">
+        <span class="act-icon">🥾</span>
+        <h4>Mountain Hiking</h4>
+        <p>Explore pine forest trails ranging from easy walks to challenging summit treks.</p>
+        <span class="act-badge">All Year</span>
+      </div>
+      <div class="act-card">
+        <span class="act-icon">🏕</span>
+        <h4>Camping</h4>
+        <p>Set up camp under a sky full of stars in the peaceful alpine meadows near the resort.</p>
+        <span class="act-badge">May – Sep</span>
+      </div>
+      <div class="act-card">
+        <span class="act-icon">📸</span>
+        <h4>Photography</h4>
+        <p>Every angle is a masterpiece — capture golden sunrises, snow-dusted peaks, and valley vistas.</p>
+        <span class="act-badge">All Year</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="booking">
+  <div class="container">
+    <div class="sec-label reveal">Book Your Visit</div>
+    <h2 class="sec-title reveal">Plan Your Malam Jabba Trip</h2>
+    <p class="sec-sub reveal">Choose a package and book directly — we'll handle the rest.</p>
+    <div class="booking-grid reveal">
+      <div class="booking-packages">
+        <div class="pkg active" onclick="selectPkg(this)">
+          <div class="pkg-top"><h4>🌿 Day Trip</h4><div class="pkg-price">Rs 2,500 <small>/person</small></div></div>
+          <p>Perfect for a quick adventure. Includes chairlift ride, guided walk & entrance.</p>
+          <div class="pkg-features"><span>Chairlift</span><span>Guide</span><span>Entrance</span></div>
+        </div>
+        <div class="pkg popular" onclick="selectPkg(this)">
+          <div class="pkg-top"><h4>⛷ Ski Weekend</h4><div class="pkg-price">Rs 12,000 <small>/person</small></div></div>
+          <p>2 nights at resort hotel, ski equipment rental, instructor & all meals included.</p>
+          <div class="pkg-features"><span>2 Nights</span><span>Ski Gear</span><span>Instructor</span><span>Meals</span></div>
+        </div>
+        <div class="pkg" onclick="selectPkg(this)">
+          <div class="pkg-top"><h4>👨‍👩‍👧 Family Package</h4><div class="pkg-price">Rs 28,000 <small>/family</small></div></div>
+          <p>3 days for a family of 4. Hotel stay, activities, guided tours & transport from Mingora.</p>
+          <div class="pkg-features"><span>3 Nights</span><span>Transport</span><span>Activities</span><span>4 Persons</span></div>
+        </div>
+        <div class="pkg" onclick="selectPkg(this)">
+          <div class="pkg-top"><h4>🎯 Custom Trip</h4><div class="pkg-price">Custom <small>quote</small></div></div>
+          <p>Tell us your group size, dates and preferences — we'll build the perfect itinerary for you.</p>
+          <div class="pkg-features"><span>Flexible</span><span>Any Group</span><span>Personalised</span></div>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <h3>📋 Reserve Your Spot</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"/></div>
+          <div class="form-group"><label>Phone / WhatsApp</label><input type="text" placeholder="+92 300 ..."/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Travel Date</label><input type="date"/></div>
+          <div class="form-group"><label>No. of Guests</label>
+            <select><option>1 Person</option><option>2 Persons</option><option>3-5 Persons</option><option>6-10 Persons</option><option>10+ Persons</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Selected Package</label>
+          <select id="pkgSelect"><option>Day Trip – Rs 2,500/person</option><option>Ski Weekend – Rs 12,000/person</option><option>Family Package – Rs 28,000/family</option><option>Custom Trip</option></select>
+        </div>
+        <div class="form-group"><label>Special Requests</label><textarea placeholder="Dietary needs, accessibility, custom activities..."></textarea></div>
+        <button class="btn-book" onclick="submitBooking()">✈ Confirm Booking</button>
+        <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20book%20a%20trip%20to%20Malam%20Jabba." target="_blank" class="btn-wa2">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book via WhatsApp Instead
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO REACH -->
+<section class="section" id="reach">
+  <div class="container">
+    <div class="sec-label reveal">Getting There</div>
+    <h2 class="sec-title reveal">How To Reach Malam Jabba</h2>
+    <div class="reach-grid reveal">
+      <div class="reach-card"><div class="r-icon">🚗</div><h4>By Car</h4><p>From Mingora via Saidu Sharif Road → Khwazakhela → Malam Jabba. About 1.5–2 hrs on a scenic mountain road.</p></div>
+      <div class="reach-card"><div class="r-icon">🚌</div><h4>By Hiace / Van</h4><p>Shared Hiaces depart daily from Mingora's main bus stand. Ask for "Malam Jabba" — journey takes ~2 hrs.</p></div>
+      <div class="reach-card"><div class="r-icon">🚁</div><h4>By Helicopter</h4><p>Charter helicopter tours from Saidu Sharif Airport available for groups — the most spectacular way to arrive!</p></div>
+      <div class="reach-card"><div class="r-icon">📍</div><h4>GPS Coordinates</h4><p>34.8167° N, 72.5667° E — Search "Malam Jabba Ski Resort" on Google Maps for turn-by-turn directions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="section" id="tips-section">
+  <div class="container">
+    <div class="sec-label reveal">Visitor Tips</div>
+    <h2 class="sec-title reveal">Before You Go</h2>
+    <div class="tips-list reveal">
+      <div class="tip"><div class="tip-icon">🧥</div><p><strong>Dress Warm</strong>Even in summer, temperatures can drop sharply at 2,800m. Always bring layers and a windproof jacket.</p></div>
+      <div class="tip"><div class="tip-icon">💵</div><p><strong>Carry Cash</strong>ATMs are not available at the resort. Withdraw cash in Mingora before heading up the mountain.</p></div>
+      <div class="tip"><div class="tip-icon">🕗</div><p><strong>Start Early</strong>Leave Mingora by 7–8 AM to avoid traffic on mountain roads and get the most out of your day.</p></div>
+      <div class="tip"><div class="tip-icon">📶</div><p><strong>Limited Signal</strong>Mobile coverage is weak at the resort. Download offline maps before you leave town.</p></div>
+      <div class="tip"><div class="tip-icon">🍱</div><p><strong>Pack Snacks</strong>Resort food options are limited. Pack snacks and water, though the on-site dhaba serves basic meals.</p></div>
+      <div class="tip"><div class="tip-icon">📅</div><p><strong>Book Ahead</strong>Hotel rooms at the resort sell out fast in ski season (Dec–Feb). Reserve at least 2 weeks in advance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE ATTRACTIONS -->
+<section class="section" id="more">
+  <div class="container">
+    <div class="sec-label reveal">Explore More</div>
+    <h2 class="sec-title reveal">Other Places to Visit</h2>
+    <div class="more-grid reveal">
+      <a href="kalam.html" class="more-card">
+        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=600&q=80" alt="Kalam"/>
+        <div class="more-card-body"><h4>Kalam Valley</h4><p>Dense forests & alpine meadows · 99 km</p></div>
+      </a>
+      <a href="mahodand.html" class="more-card">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mahodand"/>
+        <div class="more-card-body"><h4>Mahodand Lake</h4><p>Turquoise alpine lake at 2,800m · 98 km</p></div>
+      </a>
+      <a href="bahrain.html" class="more-card">
+        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80" alt="Bahrain"/>
+        <div class="more-card-body"><h4>Bahrain</h4><p>Riverside town & trout fishing · 64 km</p></div>
+      </a>
+      <a href="white-palace.html" class="more-card">
+        <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=600&q=80" alt="White Palace"/>
+        <div class="more-card-body"><h4>White Palace</h4><p>Royal gardens in Marghazar · 13 km</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <a href="index.html">SwatExplorer</a> · Malam Jabba — Switzerland of Pakistan · Made with ❤ in Swat</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/attraction.js"></script>
+</body>
+</html>

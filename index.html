@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Swat Valley Explorer – Discover the Switzerland of Pakistan</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔</text></svg>"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="/css/home.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">🏔</div>
+    <div class="logo-text">
+      <span>SwatExplorer</span>
+      <span>Swat Valley · Pakistan</span>
+    </div>
+  </a>
+  <div class="nav-center">
+    <a href="#about" class="nav-link">About</a>
+    <div class="nav-link has-drop">
+      Attractions <span class="drop-arrow">▼</span>
+      <div class="dropdown">
+        <a href="malam-jabba.html" class="drop-item"><div class="di">⛷</div>Malam Jabba</a>
+        <a href="mahodand.html" class="drop-item"><div class="di">🏔</div>Mahodand Lake</a>
+        <a href="kalam.html" class="drop-item"><div class="di">🌿</div>Kalam Valley</a>
+        <a href="bahrain.html" class="drop-item"><div class="di">🏘</div>Bahrain</a>
+        <a href="fizagat.html" class="drop-item"><div class="di">🌳</div>Fizagat Park</a>
+        <a href="butkara.html" class="drop-item"><div class="di">🪨</div>Butkara Stupa</a>
+        <a href="white-palace.html" class="drop-item"><div class="di">🏰</div>White Palace</a>
+        <a href="jarogo.html" class="drop-item"><div class="di">💧</div>Jarogo Waterfall</a>
+        <a href="ushu-valley.html" class="drop-item"><div class="di">🌲</div>Ushu Valley</a>
+        <a href="#attractions" class="drop-item"><div class="di">➕</div>View All</a>
+      </div>
+    </div>
+    <a href="#practical" class="nav-link">Plan Trip</a>
+    <a href="#itineraries" class="nav-link">Itineraries</a>
+    <a href="#tips" class="nav-link">Local Tips</a>
+    <a href="#booking" class="nav-link">Book Now</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="booking.html" class="nav-cta">✈ Book Now</a>
+    <button class="hamburger" id="hamburger" onclick="toggleDrawer()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-section-label">Navigate</div>
+  <a href="#about" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">ℹ️</div>About Swat</a>
+  <a href="#practical" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">🗺</div>Plan Your Trip</a>
+  <a href="#itineraries" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">📋</div>Itineraries</a>
+  <a href="#tips" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">💡</div>Local Tips</a>
+  <a href="#booking" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">✈</div>Book Now</a>
+  <a href="#contact" class="drawer-link" onclick="toggleDrawer()"><div class="dl-icon">📞</div>Contact</a>
+  <div class="drawer-section-label">Top Attractions</div>
+  <a href="malam-jabba.html" class="drawer-link"><div class="dl-icon">⛷</div>Malam Jabba</a>
+  <a href="mahodand.html" class="drawer-link"><div class="dl-icon">🏔</div>Mahodand Lake</a>
+  <a href="kalam.html" class="drawer-link"><div class="dl-icon">🌿</div>Kalam Valley</a>
+  <a href="bahrain.html" class="drawer-link"><div class="dl-icon">🏘</div>Bahrain</a>
+  <a href="fizagat.html" class="drawer-link"><div class="dl-icon">🌳</div>Fizagat Park</a>
+  <a href="butkara.html" class="drawer-link"><div class="dl-icon">🪨</div>Butkara Stupa</a>
+  <a href="white-palace.html" class="drawer-link"><div class="dl-icon">🏰</div>White Palace</a>
+  <a href="jarogo.html" class="drawer-link"><div class="dl-icon">💧</div>Jarogo Waterfall</a>
+  <a href="ushu-valley.html" class="drawer-link"><div class="dl-icon">🌲</div>Ushu Valley</a>
+  <div class="drawer-cta"><a href="#booking" onclick="toggleDrawer()">✈ Book Your Trip Now</a></div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay2"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Pakistan's Hidden Paradise</div>
+    <h1>Discover the <em>Switzerland</em><br>of Pakistan –<br>Swat Valley Awaits You</h1>
+    <p class="hero-sub">Emerald rivers, snow-capped peaks, ancient history, and legendary Pashtun hospitality. Your dream escape is just one journey away.</p>
+    <div class="hero-btns">
+      <a href="#attractions" class="btn-primary">🏔 Explore Attractions</a>
+      <a href="#booking" class="btn-outline">✈ Plan Your Trip</a>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">9+</span><span class="lbl">Top Spots</span></div>
+      <div class="stat"><span class="num">3000m</span><span class="lbl">Peak Altitude</span></div>
+      <div class="stat"><span class="num">2500+</span><span class="lbl">Yrs of History</span></div>
+      <div class="stat"><span class="num">365</span><span class="lbl">Days of Beauty</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="about-img">
+          <img src="/images/my-photo.jpg" alt="About Swat Valley"/>
+          <div class="about-img-badge">🏔 Swat Valley, KPK, Pakistan</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="sec-label">About Swat</div>
+        <h2 class="sec-title">A Valley Like No Other</h2>
+        <div class="about-text">
+          <p>Nestled in the heart of Khyber Pakhtunkhwa, Swat Valley is often called the "Switzerland of Pakistan" — and for good reason. Lush green meadows, crystal-clear rivers, towering snow-capped mountains, and ancient Buddhist heritage make it one of South Asia's most breathtaking destinations.</p>
+          <p>From the bustling bazaars of Mingora to the serene alpine meadows of Kalam and the thrilling ski slopes of Malam Jabba, Swat offers something for every traveller — adventure seekers, history lovers, families, and those simply seeking peace.</p>
+          <p>Today, Swat is one of Pakistan's safest and fastest-growing tourist destinations, welcoming hundreds of thousands of visitors each year with its legendary Pashtun hospitality.</p>
+        </div>
+        <div class="about-pills">
+          <span class="pill">🏔 Mountain Trekking</span>
+          <span class="pill">🎿 Skiing</span>
+          <span class="pill">🏛 Buddhist Heritage</span>
+          <span class="pill">🌿 Eco Tourism</span>
+          <span class="pill">🍯 Local Cuisine</span>
+          <span class="pill">🚣 River Rafting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATTRACTIONS -->
+<section id="attractions">
+  <div class="container">
+    <div class="attractions-header reveal">
+      <div>
+        <div class="sec-label">Top Attractions</div>
+        <h2 class="sec-title">Places You Must Visit</h2>
+      </div>
+      <a href="#attractions" class="view-all">View All Attractions →</a>
+    </div>
+    <div class="cards-grid stagger">
+      <a href="malam-jabba.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Malam Jabba"/><span class="card-badge">⛷ Ski Resort</span></div>
+        <div class="card-body"><h3>Malam Jabba</h3><p>Pakistan's premier ski resort with chairlifts, snow activities and breathtaking panoramic views year-round.</p><div class="card-dist">📍 68 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="mahodand.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mahodand Lake"/><span class="card-badge">🏔 Alpine Lake</span></div>
+        <div class="card-body"><h3>Mahodand Lake</h3><p>A stunning turquoise lake at 2,800m surrounded by lush meadows and snow peaks. A hiker's paradise.</p><div class="card-dist">📍 98 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="kalam.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=600&q=80" alt="Kalam Valley"/><span class="card-badge">🌿 Valley</span></div>
+        <div class="card-body"><h3>Kalam Valley</h3><p>The crown jewel of upper Swat — dense forests, roaring rivers and charming villages at 2,000m elevation.</p><div class="card-dist">📍 99 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="fizagat.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1518021964703-4b2030f03085?w=600&q=80" alt="Fizagat Park"/><span class="card-badge">🌳 Park</span></div>
+        <div class="card-body"><h3>Fizagat Park</h3><p>A riverside leisure park perfect for families, with lush gardens along the banks of the Swat River.</p><div class="card-dist">📍 8 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="butkara.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=600&q=80" alt="Butkara Stupa"/><span class="card-badge">🪨 Heritage</span></div>
+        <div class="card-body"><h3>Butkara Stupa</h3><p>An ancient Buddhist site dating to the 3rd century BC — a UNESCO-recognized Gandharan treasure.</p><div class="card-dist">📍 3 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="white-palace.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=600&q=80" alt="White Palace"/><span class="card-badge">🏰 Palace</span></div>
+        <div class="card-body"><h3>White Palace</h3><p>The elegant summer palace of the Wali of Swat, set amid orchards and gardens in scenic Marghazar Valley.</p><div class="card-dist">📍 13 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="bahrain.html" class="card">
+        <div class="card-img"><img src="/images/bahrain.jpg" alt="Bahrain"/><span class="card-badge">🏘 Town</span></div>
+        <div class="card-body"><h3>Bahrain</h3><p>A vibrant riverside town on the Swat River, famous for trout fishing, bazaars and mountain gateway.</p><div class="card-dist">📍 64 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="ushu-valley.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="Ushu Valley"/><span class="card-badge">🌲 Forest</span></div>
+        <div class="card-body"><h3>Ushu Valley</h3><p>A hidden gem near Kalam with 500-year-old deodar forests, wildflower meadows and crystal-clear streams.</p><div class="card-dist">📍 105 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+      <a href="jarogo.html" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600&q=80" alt="Jarogo Waterfall"/><span class="card-badge">💧 Waterfall</span></div>
+        <div class="card-body"><h3>Jarogo Waterfall</h3><p>One of Pakistan's most spectacular waterfalls, cascading 100m into a misty pool surrounded by forest.</p><div class="card-dist">📍 101 km from Mingora</div><div class="card-arrow">Explore →</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL -->
+<section id="practical">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label" style="color:rgba(255,255,255,0.5)">Practical Info</div>
+      <h2 class="sec-title" style="color:#fff">Everything You Need to Know</h2>
+    </div>
+    <div class="practical-grid stagger">
+      <div class="pcard"><div class="pcard-icon">🗓</div><h4>Best Time to Visit</h4><p><strong style="color:var(--orange)">Apr–Jun:</strong> Spring bloom & trekking<br><strong style="color:var(--orange)">Jul–Sep:</strong> Lush green valleys<br><strong style="color:var(--orange)">Dec–Feb:</strong> Snow & skiing<br>Avoid late monsoon peaks.</p></div>
+      <div class="pcard"><div class="pcard-icon">🚗</div><h4>How to Reach</h4><p>Via <strong style="color:var(--orange)">Swat Motorway (M-16)</strong> from Peshawar — 1.5 hrs to Mingora. From Islamabad: 4–5 hrs via M-1 + M-16. Nearest airport: Peshawar (PEW).</p></div>
+      <div class="pcard"><div class="pcard-icon">🚌</div><h4>Local Transport</h4><p>Daewoo & Niazi buses from Peshawar. Local Hiaces & wagons connect Mingora to Kalam, Bahrain & Malam Jabba. Hire jeeps for upper valleys.</p></div>
+      <div class="pcard"><div class="pcard-icon">🏨</div><h4>Accommodation</h4><p>From luxury hotels (Serena Swat, PC Malam Jabba) to budget guesthouses. Book ahead in peak season (Jun–Aug). Camping available near Mahodand.</p></div>
+      <div class="pcard"><div class="pcard-icon">🛡</div><h4>Safety</h4><p>Swat is <strong style="color:var(--orange)">safe and tourist-friendly</strong> today with heavy security presence. Follow local guidelines, respect customs, register at checkpoints.</p></div>
+      <div class="pcard"><div class="pcard-icon">📱</div><h4>Connectivity</h4><p>Good mobile coverage (Jazz, Telenor, Zong) in Mingora. Signal weakens in upper Kalam. Carry cash — ATMs limited in upper areas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARIES -->
+<section id="itineraries">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Itineraries</div>
+      <h2 class="sec-title">Ready-Made Trip Plans</h2>
+      <p class="sec-sub">Pick a plan or mix and match — every route is a masterpiece.</p>
+    </div>
+    <div class="itin-grid stagger">
+      <div class="itin-card">
+        <span class="tag">2 Days · Weekend</span>
+        <h3>Quick Weekend Getaway</h3>
+        <div class="day"><div class="day-num">1</div><div class="day-info"><h5>Arrive & Explore</h5><p>Drive via M-16, lunch in Mingora, Butkara Stupa, evening at Fizagat Park.</p></div></div>
+        <div class="day"><div class="day-num">2</div><div class="day-info"><h5>Malam Jabba & Return</h5><p>Early morning to Malam Jabba, scenic drive, return to Peshawar/Islamabad.</p></div></div>
+      </div>
+      <div class="itin-card">
+        <span class="tag">3 Days · Family</span>
+        <h3>Classic Swat Family Trip</h3>
+        <div class="day"><div class="day-num">1</div><div class="day-info"><h5>Arrive Mingora</h5><p>Check in, visit Butkara Stupa, dinner at local restaurant, bazaar stroll.</p></div></div>
+        <div class="day"><div class="day-num">2</div><div class="day-info"><h5>Marghazar & Fizagat</h5><p>Morning at White Palace, Fizagat Park riverside picnic, evening in Mingora.</p></div></div>
+        <div class="day"><div class="day-num">3</div><div class="day-info"><h5>Malam Jabba</h5><p>Full day at ski resort, chairlift ride, snow activities, return. Depart.</p></div></div>
+      </div>
+      <div class="itin-card">
+        <span class="tag">5 Days · Adventure</span>
+        <h3>Upper Swat Explorer</h3>
+        <div class="day"><div class="day-num">1</div><div class="day-info"><h5>Mingora → Bahrain</h5><p>Drive to Bahrain, trout lunch, riverside walk, overnight in Bahrain.</p></div></div>
+        <div class="day"><div class="day-num">2</div><div class="day-info"><h5>Bahrain → Kalam</h5><p>Explore Kalam bazaar, Ushu forest hike, overnight in Kalam guesthouse.</p></div></div>
+        <div class="day"><div class="day-num">3</div><div class="day-info"><h5>Mahodand Lake</h5><p>Full day jeep trip — horse riding, fishing, picnic by the lake.</p></div></div>
+        <div class="day"><div class="day-num">4</div><div class="day-info"><h5>Jarogo Waterfall</h5><p>Morning trek to Jarogo Falls, afternoon return to Mingora.</p></div></div>
+        <div class="day"><div class="day-num">5</div><div class="day-info"><h5>Malam Jabba & Depart</h5><p>Ski resort visit, shopping in Mingora, depart evening.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL TIPS -->
+<section id="tips">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-label">Local Tips</div>
+      <h2 class="sec-title">Travel Like a Local</h2>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-box reveal-left">
+        <h4>🍽 Food & Drink</h4>
+        <div class="tip-item"><div class="tip-icon">🥩</div><p><strong>Chapli Kebabs</strong> — Swat's famous minced beef patties, the best in Pakistan. Try them at roadside dhabas in Mingora.</p></div>
+        <div class="tip-item"><div class="tip-icon">🍯</div><p><strong>Swat Honey</strong> — Pure mountain honey is a local treasure. Buy directly from beekeepers along the road to Kalam.</p></div>
+        <div class="tip-item"><div class="tip-icon">🐟</div><p><strong>Fresh Trout</strong> — Grilled river trout in Bahrain and Kalam is a must-try delicacy unique to upper Swat.</p></div>
+        <div class="tip-item"><div class="tip-icon">🍵</div><p><strong>Kehwa Tea</strong> — Traditional green tea with cardamom and saffron — the ultimate Pashtun welcome.</p></div>
+      </div>
+      <div class="tip-box reveal-right">
+        <h4>🤝 Culture & Etiquette</h4>
+        <div class="tip-item"><div class="tip-icon">👗</div><p><strong>Dress Modestly</strong> — Both men and women should dress conservatively, especially in towns and bazaars.</p></div>
+        <div class="tip-item"><div class="tip-icon">📸</div><p><strong>Photography</strong> — Always ask permission before photographing people, especially women.</p></div>
+        <div class="tip-item"><div class="tip-icon">🕌</div><p><strong>Respect Prayer Times</strong> — Shops close briefly for prayers. Plan meals and shopping accordingly.</p></div>
+        <div class="tip-item"><div class="tip-icon">😊</div><p><strong>Hospitality</strong> — Pashtun hospitality is legendary. Accept tea when offered — it's a sign of welcome and respect.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="reveal" style="text-align:center;">
+        <div class="sec-label">Book Your Trip</div>
+        <h2 class="sec-title" style="color:#fff;">Plan & Book Your Swat Adventure</h2>
+        <p class="sec-sub" style="margin:0 auto 40px;">Choose your destination, trip type and dates — we'll handle the rest and confirm within 24 hours.</p>
+      </div>
+      <div class="booking-form-box reveal-scale">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>👤 Your Name</label>
+            <input type="text" placeholder="Full name"/>
+          </div>
+          <div class="form-group">
+            <label>📱 Phone / WhatsApp</label>
+            <input type="text" placeholder="+92 300 ..."/>
+          </div>
+          <div class="form-group">
+            <label>🗺 Choose Destination</label>
+            <select>
+              <option value="">— Select a Place —</option>
+              <option>Malam Jabba – Ski Resort</option>
+              <option>Mahodand Lake – Alpine Lake</option>
+              <option>Kalam Valley – Upper Swat</option>
+              <option>Bahrain – Riverside Town</option>
+              <option>Fizagat Park – Riverside Park</option>
+              <option>Butkara Stupa – Buddhist Heritage</option>
+              <option>White Palace – Marghazar</option>
+              <option>Jarogo Waterfall</option>
+              <option>Ushu Valley – Ancient Forest</option>
+              <option>Full Swat Tour – All Highlights</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>🎯 Trip Type</label>
+            <select>
+              <option value="">— Select Type —</option>
+              <option>Family Trip</option>
+              <option>Adventure / Trekking</option>
+              <option>Skiing / Snow Trip</option>
+              <option>Honeymoon / Couple</option>
+              <option>Weekend Getaway</option>
+              <option>Group Tour</option>
+              <option>Photography Tour</option>
+              <option>Heritage / Cultural</option>
+              <option>Camping & Outdoors</option>
+              <option>School / Student Trip</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>📅 Travel Date</label>
+            <input type="date"/>
+          </div>
+          <div class="form-group">
+            <label>👥 Number of Guests</label>
+            <select>
+              <option>1 Person</option>
+              <option>2 Persons</option>
+              <option>3–5 Persons</option>
+              <option>6–10 Persons</option>
+              <option>11–20 Persons</option>
+              <option>20+ Persons</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>🏨 Accommodation</label>
+            <select>
+              <option>Luxury Hotel</option>
+              <option>Mid-range Guesthouse</option>
+              <option>Budget Guesthouse</option>
+              <option>Camping / Tent</option>
+              <option>I'll arrange myself</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>💰 Budget Per Person</label>
+            <select>
+              <option>Under Rs 5,000</option>
+              <option>Rs 5,000 – 15,000</option>
+              <option>Rs 15,000 – 30,000</option>
+              <option>Rs 30,000 – 50,000</option>
+              <option>Above Rs 50,000</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>✏️ Special Requests or Questions</label>
+            <textarea placeholder="Tell us your preferences — activities, dietary needs, accessibility, vehicle type, or anything else..."></textarea>
+          </div>
+        </div>
+        <div class="booking-actions">
+          <button class="btn-book" onclick="submitBooking()">✈ Confirm My Booking</button>
+          <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20book%20a%20trip%20to%20Swat%20Valley.%20Please%20help%20me%20plan!" target="_blank" class="btn-wa-book">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <div class="sec-label" style="color:rgba(255,255,255,0.5)">Get In Touch</div>
+      <h2 class="sec-title" style="color:#fff">We're Here to Help</h2>
+      <p>Have questions about visiting Swat? Need a custom itinerary or travel advice? Reach out — we'd love to help you plan the perfect trip!</p>
+      <div class="contact-methods">
+        <a href="https://wa.me/923305412327?text=Hi!%20I%20want%20to%20plan%20a%20trip%20to%20Swat%20Valley." target="_blank" class="cm" style="text-decoration:none;">
+          <span class="cm-icon">📱</span><h4>WhatsApp</h4><p>03305412327</p>
+        </a>
+        <a href="mailto:shahf29887@gmail.com" class="cm" style="text-decoration:none;">
+          <span class="cm-icon">📧</span><h4>Email</h4><p>shahf29887@gmail.com</p>
+        </a>
+        <a href="https://maps.google.com/?q=Mingora,Swat,KPK,Pakistan" target="_blank" class="cm" style="text-decoration:none;">
+          <span class="cm-icon">📍</span><h4>Location</h4><p>Mingora, Swat, KPK</p>
+        </a>
+      </div>
+      <!-- Google Map Embed -->
+      <div style="border-radius:16px;overflow:hidden;margin-bottom:28px;width:100%;height:200px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13217.56!2d72.3609!3d34.7717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de4f4b4b4b4b4b%3A0x1234!2sMingora%2C+Swat%2C+KPK%2C+Pakistan!5e0!3m2!1sen!2s!4v1234567890"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <a href="https://wa.me/923305412327?text=Hi!%20I%20want%20to%20plan%20a%20trip%20to%20Swat%20Valley." target="_blank" class="btn-wa-main">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">🏔</div>
+          <div class="logo-text"><span>SwatExplorer</span><span>Swat Valley · Pakistan</span></div>
+        </a>
+        <p>Your trusted guide to the Switzerland of Pakistan. Discover the magic of Swat Valley — one adventure at a time.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">📘</a>
+          <a href="#" class="social-btn">📸</a>
+          <a href="#" class="social-btn">🐦</a>
+          <a href="#" class="social-btn">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Attractions</h4>
+        <a href="malam-jabba.html">Malam Jabba</a>
+        <a href="mahodand.html">Mahodand Lake</a>
+        <a href="kalam.html">Kalam Valley</a>
+        <a href="bahrain.html">Bahrain</a>
+        <a href="fizagat.html">Fizagat Park</a>
+        <a href="butkara.html">Butkara Stupa</a>
+        <a href="white-palace.html">White Palace</a>
+        <a href="jarogo.html">Jarogo Waterfall</a>
+        <a href="ushu-valley.html">Ushu Valley</a>
+      </div>
+      <div class="footer-col">
+        <h4>Plan Your Trip</h4>
+        <a href="#practical">Best Time to Visit</a>
+        <a href="#practical">How to Reach</a>
+        <a href="#practical">Accommodation</a>
+        <a href="#itineraries">2-Day Itinerary</a>
+        <a href="#itineraries">3-Day Itinerary</a>
+        <a href="#itineraries">5-Day Itinerary</a>
+        <a href="#booking">Book Now</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About Swat</a>
+        <a href="#tips">Local Tips</a>
+        <a href="#tips">Food & Cuisine</a>
+        <a href="#contact">Contact Us</a>
+        <a href="404.html">404 Page</a>
+        <a href="#booking">Custom Tour</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>SwatExplorer</span> · Made with ❤ in Mingora, Swat Valley, Pakistan</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="404.html">404</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// Click-based dropdown
+document.querySelectorAll('.has-drop').forEach(el=>{
+  el.addEventListener('click',e=>{
+    e.stopPropagation();
+    const isOpen=el.classList.contains('open');
+    document.querySelectorAll('.has-drop').forEach(d=>d.classList.remove('open'));
+    if(!isOpen)el.classList.add('open');
+  });
+});
+document.addEventListener('click',()=>{
+  document.querySelectorAll('.has-drop').forEach(d=>d.classList.remove('open'));
+});
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50);
+  document.getElementById('scrollTop').classList.toggle('show',window.scrollY>400);
+});
+
+// Mobile drawer
+function toggleDrawer(){
+  const h=document.getElementById('hamburger');
+  const d=document.getElementById('mobileDrawer');
+  const o=document.getElementById('drawerOverlay');
+  h.classList.toggle('open');
+  d.classList.toggle('open');
+  o.classList.toggle('open');
+  document.body.style.overflow=d.classList.contains('open')?'hidden':'';
+}
+
+// Scroll animations
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>observer.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+
+// Booking submit
+function submitBooking(){
+  const name=document.querySelector('input[placeholder="Full name"]').value;
+  if(!name.trim()){alert('Please enter your name to continue.');return;}
+  alert(`🎉 Thank you, ${name}!\n\nYour booking request has been received. Our team will contact you within 24 hours to confirm your Swat adventure!\n\n✈ SwatExplorer Team`);
+}
+</script>
+</body>
+</html>
